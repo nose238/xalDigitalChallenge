@@ -19,3 +19,5 @@ Las rutas para la API son:
    Por ejemplo: 
    {"first_name": "Eduardo", "last_name": "Marquez", "company_name": "Info", "address": "Miguel Hidalgo", "city": "Coyoacan", "state": "MX", "zip": "04260", 
    "phone1": "558-546-5128", "phone2": "", "email": "nose238@hotmail.com","department": "CYC"}
+    
+      *** Nota: Ambos métodos fueron probados desde postman.
