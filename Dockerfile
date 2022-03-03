@@ -18,6 +18,7 @@ COPY ./main.py ./
 COPY ./Sample.csv ./
 COPY ./ingestData.sh ./
 COPY ./initCentosAPI.sh ./
+COPY ./validateFields.py ./
 # SET UTF-8 and run API
 ENV LC_CTYPE=en_US.UTF-8 
 CMD [ "bash", "initCentosAPI.sh" ]

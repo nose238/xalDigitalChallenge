@@ -16,5 +16,7 @@ phone2 varchar(12),\
 email varchar(40),\
 department varchar(30)
 );"
+# Clean Sample with python (Validate state == 2)
+python3 validateFields.py
 # Copy CVS to table created
-PGPASSWORD=$pw psql -h $ip -U $user  -c "\\COPY $table (first_name,last_name,company_name,address,city,state,zip,phone1,phone2,email,department) FROM '/code/Sample.csv' DELIMITER ',' CSV HEADER"
+PGPASSWORD=$pw psql -h $ip -U $user  -c "\\COPY $table (first_name,last_name,company_name,address,city,state,zip,phone1,phone2,email,department) FROM '/code/SampleCleaned.csv' DELIMITER ',' CSV HEADER"
