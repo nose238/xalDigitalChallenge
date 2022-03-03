@@ -12,11 +12,11 @@ services:
     - postgres
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
-      interval: 5s
-      timeout: 25s
-      retries: 5
+      interval: 10s
+      timeout: 600s 
+      retries: 60
   centos:
-    image: centosxd
+    image: nose238/centosxd
     ports:
     - 80:80
     networks: 
