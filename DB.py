@@ -9,7 +9,7 @@ def connectToDB():
     c["cursor"] = cursor
     c["connection"] = conn
     return c
-#hola
+#holis soy jessi
 # Excec a query inside DB
 def execQuery(query):
     connection = connectToDB()
